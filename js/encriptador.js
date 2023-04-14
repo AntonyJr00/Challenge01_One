@@ -115,22 +115,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const parrafo = textarea.value;
-//   console.log(parrafo);
-
-//   if (parrafo === "") {
-//     cardNoResult.style.display = "block";
-//   } else {
-//     cardResult.style.display = "flex";
-//   }
-
-//   if (parrafo === "") {
-//     cardNoResult.style.display = "block";
-//     cardResult.style.display = "none";
-//   } else {
-//     cardResult.style.display = "flex";
-//     cardNoResult.style.display = "none";
-//   }
-// });
