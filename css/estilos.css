@@ -148,6 +148,10 @@ body {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
 }
 
+.resp__parrafo {
+  overflow-x: hidden;
+}
+
 .respuesta {
   font-size: 1.7rem;
   font-family: var(--font-text);
@@ -175,6 +179,65 @@ body {
 
 /* Footer */
 
+#main-footer {
+  padding-top: 40px;
+  padding-bottom: 4px;
+  background: #fff;
+}
+
+.container-foo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.foo-title {
+  font-size: 1.3rem;
+  font-family: var(--font-text);
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+.foo-name {
+  color: var(--text-gris);
+  font-family: var(--font-text);
+}
+
+#main-footer p {
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.foo-item {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+  background-color: var(--color-blue);
+}
+
+.foo-item:hover {
+  scale: 1.3;
+}
+
+.foo-item a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+/* Tablet */
 @media (min-width: 768px) {
   .button__cont {
     flex-direction: row;
@@ -233,5 +296,10 @@ body {
   .resp__parrafo {
     padding-right: 5px;
     overflow-y: scroll;
+  }
+
+  .resp__parrafo::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
   }
 }
