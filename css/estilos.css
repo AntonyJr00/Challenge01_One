@@ -11,16 +11,14 @@
   --font-text: "Sofia Sans Condensed", sans-serif;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-}
-
 body {
   background-color: var(--fondo-transparent);
 }
 
-/* Mobile */
+img {
+  width: 100%;
+  height: 100%;
+}
 
 .title {
   font-family: var(--font-text);
@@ -38,7 +36,6 @@ body {
   gap: 2rem;
   padding: 10px 20px;
 }
-/* Seccion 1---------- */
 
 .text__input {
   padding-top: 50px;
@@ -94,8 +91,6 @@ body {
   background-color: transparent;
 }
 
-/* Section 2 */
-
 .container-noresp {
   width: 100%;
   margin-bottom: 2rem;
@@ -131,8 +126,6 @@ body {
 .marioneta {
   display: none;
 }
-
-/* Section 3 */
 
 .container-resp {
   min-height: 300px;
@@ -176,8 +169,6 @@ body {
   background-color: var(--color-blue);
   color: var(--color-white);
 }
-
-/* Footer */
 
 #main-footer {
   padding-top: 40px;
@@ -237,7 +228,6 @@ body {
   color: var(--color-white);
 }
 
-/* Tablet */
 @media (min-width: 768px) {
   .button__cont {
     flex-direction: row;
@@ -251,8 +241,6 @@ body {
     font-size: 1.3rem;
   }
 }
-
-/* Desktop */
 
 @media (min-width: 1024px) {
   #container {

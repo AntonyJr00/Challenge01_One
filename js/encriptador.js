@@ -35,7 +35,6 @@ textarea.addEventListener("input", () => {
             : newTexto.push(vocal);
         });
       }
-      // console.log(newTexto.join(""));
       return newTexto.join("");
     }
 
@@ -52,8 +51,6 @@ textarea.addEventListener("input", () => {
     resultado.textContent = mensajeEncriptado;
     return mensajeEncriptado;
   });
-
-  //---------------
 
   desencriptarButton.addEventListener("click", () => {
     const textToDesencriptar = textarea.value;
