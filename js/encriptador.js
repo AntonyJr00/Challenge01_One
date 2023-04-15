@@ -14,8 +14,9 @@ textarea.addEventListener("input", () => {
       msg = msg.toLowerCase();
       let veredicto = false;
       for (const letra of msg) {
-        if (/[a-zA-Z]/.test(msg) || letra === " ") veredicto = true;
-        else return console.log("Introduzca solo letras del abecedario");
+        /^[a-z]+$/.test(msg) || letra === " "
+          ? (veredicto = true)
+          : (veredicto = false);
       }
 
       let letras = msg.split("");
@@ -60,9 +61,8 @@ textarea.addEventListener("input", () => {
       if (typeof msg !== "string") return console.log("Texto no valido");
 
       msg = msg.toLowerCase();
-      let veredicto = false;
       for (const letra of msg) {
-        if (/[a-zA-Z]/.test(msg) || letra === " ") veredicto = true;
+        if (/^[a-z]+$/.test(msg) || letra === " ");
         else return console.log("Introduzca solo letras del abecedario");
       }
 
