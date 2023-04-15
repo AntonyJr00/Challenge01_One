@@ -84,11 +84,21 @@ img {
   background-color: var(--color-blue);
   border: 2px solid var(--color-blue);
   border-radius: 20px;
+  transition: 0.4s all;
 }
 
 .button__cont button:last-child {
   color: var(--color-blue);
   background-color: transparent;
+}
+
+#buttonencriptar:active {
+  background-color: var(--color-white);
+  color: var(--color-blue);
+}
+#buttondesencriptar:active {
+  background-color: var(--color-blue);
+  color: var(--color-white);
 }
 
 .container-noresp {
