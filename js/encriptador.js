@@ -11,13 +11,9 @@ textarea.addEventListener("input", () => {
     const textToEncriptar = textarea.value;
     function encriptador(msg = "") {
       if (typeof msg !== "string") return console.log("Texto no valido");
-      msg = msg.toLowerCase();
+      msg = msg.toLowerCase().trim();
       let veredicto = false;
-      for (const letra of msg) {
-        /^[a-z]+$/.test(msg) || letra === " "
-          ? (veredicto = true)
-          : (veredicto = false);
-      }
+      /^[a-z\s]+$/.test(msg) ? (veredicto = true) : (veredicto = false);
 
       let letras = msg.split("");
       let newTexto = [];
