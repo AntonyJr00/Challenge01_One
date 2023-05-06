@@ -58,7 +58,7 @@ textarea.addEventListener("input", () => {
 
       msg = msg.toLowerCase();
       for (const letra of msg) {
-        if (/^[a-z]+$/.test(msg) || letra === " ");
+        if (/^[a-z\s]+$/.test(msg));
         else return console.log("Introduzca solo letras del abecedario");
       }
 
